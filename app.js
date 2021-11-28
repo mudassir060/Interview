@@ -1,10 +1,10 @@
-var page = 1;
 var firstName = '';
-var lastName = '';
-var phoneNo = '';
+var page = 1;
 var emailId = '';
-var Job = '';
+var phoneNo = '';
 var uniqueID = '';
+var Job = '';
+var lastName = '';
 pageload();
 function NextPage() {
     console.log(page);
@@ -22,6 +22,7 @@ function PreviousPage() {
         document.getElementById("input").value = "";
     }
 }
+
 function pageload() {
     var input = document.getElementById("input");
     var mainhading = document.getElementById("mainhading");
@@ -34,6 +35,7 @@ function pageload() {
             input.value = firstName;
         }
     }
+
     if (page == 2) {
         mainhading.innerHTML = "Last Name";
         if (lastName == '') {
@@ -43,6 +45,7 @@ function pageload() {
             input.value = lastName;
         }
     }
+
     if (page == 3) {
         mainhading.innerHTML = "Phone Number";
         if (phoneNo == '') {
@@ -52,6 +55,7 @@ function pageload() {
             input.value = phoneNo;
         }
     }
+
     if (page == 4) {
         mainhading.innerHTML = "Email Id";
         if (emailId == '') {
@@ -61,6 +65,7 @@ function pageload() {
             input.value = emailId;
         }
     }
+
     if (page == 5) {
         mainhading.innerHTML = "Job";
         if (Job == '') {
@@ -70,6 +75,7 @@ function pageload() {
             input.value = Job;
         }
     }
+    
     console.log(firstName, lastName, phoneNo, emailId, Job)
 }
 
